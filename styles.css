@@ -1,0 +1,343 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+/* nawigacja */
+
+.menu1 {
+    cursor: pointer;
+    text-decoration: none;
+    color:inherit;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.navigation {
+    height: 50px;
+    background-color: #4E4E4E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background: rgba(0, 0, 0, 0.15)
+}
+
+/* gorny banner */
+
+.top-banner {
+    display: flex;
+    position: relative;
+    align-items: center;        
+}
+
+.image-banner {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://peda.net/keravan-opisto/kielet/suomi/sak2/kappale-3/mstol/f2:file/photo/035c47bdd869216e199c4faf8b78918e652e7719/forest-547363_1920.jpg") ;
+    background-size: cover;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    position: absolute;
+    padding: 0 0 0 20px; 
+}
+
+.h1-topbanner {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size:2.25rem;
+    padding-bottom: 40px;
+}
+
+.h2-topbanner {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding-bottom: 40px;
+}
+
+
+.button-offer {
+    padding: 14px;
+    width: 164px;
+    border: solid white 3px;
+    color:white;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+
+    display: flex;
+    justify-content: center;
+
+    transition: 1s;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button-offer:hover {
+    background-color: white;
+    color: black;
+}
+
+/* specjalisci */
+
+.h1-specialists {
+    color: #152D41;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size:2.25rem;
+}
+
+.elipse {
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    padding: 0 0 0 14px;
+    flex-shrink: 0;
+}
+
+.h2-specialists {
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 56px 40px 20px 40px;
+}
+
+.p-specialists {
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding: 0 40px 20px 40px;
+}
+
+/* oferta - uslugi */
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    background-color: #405D78;
+}
+
+.h1-offer {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size:2.25rem;
+}
+
+.squares {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    width: 339px;
+    height: 339px;
+    background-color: #F1F1F1;
+    margin: 30px;
+    box-shadow: 7px 7px 7px #494949;
+
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    transition: 0.5s;
+}
+
+.service:hover {
+    transform: scale(1.05); 
+}
+
+.new-dot {
+    position: absolute; 
+    top: -22px;
+    left: -22px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: #E07A64;
+    float: left;
+}
+
+.p-service-new {
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:1.125rem;
+}
+
+
+/* stopka */
+
+.footer {
+    height: 147px;
+    background-color: #4E4E4E;
+
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media {
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.fa-instagram {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.fa-facebook-square {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/* ----------------> mobile <------------------------------------------ */
+@media screen and (max-width: 576px) {
+
+    /* nawigacja */
+    .desktop-nav {
+        display: none;
+    }
+    
+    .navigation {
+        padding: 0 0 0 14px;
+    }
+
+    /* specjalisci */
+    
+    .h1-specialists {
+        padding: 50px 0 82.65px 10px;
+        text-align: center;
+    } 
+
+    .specialist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+    /* oferta */
+    
+    .h1-offer {
+        padding: 50px 0 82.65px 10px;
+        text-align: center;
+    }  
+}
+
+/* ----------------> desktop <------------------------------------------ */
+@media screen and (min-width:576px) {
+
+    /* nawigacja */
+    .company-name {
+        padding-left: 94px;
+        font-weight: 700;
+    }
+    
+    .desktop-nav {
+        display: flex;
+        flex-direction: row;
+        padding-right: 94px;
+        font-weight: 300;
+    }
+    
+    .menu1 {
+        padding-left: 46px;
+    }
+
+    .disabled {
+        padding-left: 46px;
+    }
+
+    /* gorny - banner */
+    .texts {
+        padding-left: 94px;
+    }
+
+    /* specjalisci */
+    .h1-specialists {
+        padding: 40px 0 40px 94px;
+        text-align: flex-start;
+    }
+
+    .specialist:nth-child(odd) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        padding: 0 94px 68px 94px;
+    }
+
+    .specialist:nth-child(even) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:center;
+        text-align: right;
+        padding: 0 94px 68px 94px;
+
+    }
+
+    /* oferta - uslugi */
+    .h1-offer {
+        padding: 40px 0 40px 94px;
+        text-align: left;
+    }    
+}   
+}
+
